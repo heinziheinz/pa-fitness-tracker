@@ -41,7 +41,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FitnessTrackerTest">
+  <component name="RunManager" selected="JUnit.FitnessTrackerTest.allWorkouts">
     <configuration name="FitnessTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fitnesstracker" />
       <extension name="coverage">
@@ -91,9 +91,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FitnessTrackerTest.allWorkouts" />
         <item itemvalue="JUnit.FitnessTrackerTest" />
         <item itemvalue="JUnit.FitnessTrackerTest.allWorkoutsHavenNotBennCompleted" />
-        <item itemvalue="JUnit.FitnessTrackerTest.allWorkouts" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +109,8 @@
       <workItem from="1695224803727" duration="29000" />
       <workItem from="1695274837475" duration="1453000" />
       <workItem from="1695373891273" duration="192000" />
-      <workItem from="1695381985848" duration="418000" />
+      <workItem from="1695381985848" duration="529000" />
+      <workItem from="1695386175314" duration="254000" />
     </task>
     <servers />
   </component>
