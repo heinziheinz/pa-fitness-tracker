@@ -12,15 +12,16 @@ public class FitnessTracker {
         //   - Can you create a function that retrieves all workouts of a
         //   certain type that were completed by a certain user by username?
 
-        return user.workoutList().stream().filter(workout -> workout.workoutType() == workoutType).toList();
+        return user.workoutList().stream().filter(workout -> workout.workoutType() == workoutType)
+                .filter(workout -> workout.goal().completed()).toList();
     }
 
-    public List<Workout> allWorkoutsHaventBennCompleted(List<User> users){
+    public List<Workout> allWorkoutsHaventBennCompleted(List<User> users, int duration){
         //   - Can you create a function that retrieves all workouts
         //   from all users that have at least a minimum duration and haven't been completed?
 
         return users.stream().flatMap(user -> user.workoutList().stream())
-                .filter(workout -> workout.goal().completed() && workout.minutes() > 0).toList();
+                .filter(workout -> workout.goal().completed() && workout.minutes() > duration).toList();
     }
 }
 

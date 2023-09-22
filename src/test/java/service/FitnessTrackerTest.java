@@ -8,6 +8,8 @@ import java.util.List;
 
 class FitnessTrackerTest {
 
+    //TESTS need to be adopted
+
     @Test
     void allWorkouts() {
         Goal goalONe = new Goal(1, GoalType.MUSCLEGAIN, true);
@@ -48,7 +50,7 @@ class FitnessTrackerTest {
 
 
         FitnessTracker fitnessTracker = new FitnessTracker();
-        List<Workout> actual = fitnessTracker.allWorkoutsHaventBennCompleted(users);
+        List<Workout> actual = fitnessTracker.allWorkoutsHaventBennCompleted(users, 10);
 
 
         List<Workout> expected = List.of(workout);
